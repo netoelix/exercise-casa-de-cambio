@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa de Câmbio</title>
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script type="module" src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
     <header>
-        <h1>Casa de Câmbio</h1>
+        <h1 id="title">Casa de <span>Câmbio</span></h1>
     </header>
     <main>
-        <p>oi</p>
+        <form action="">
+            <p id="text">Digite a moeda:</p>
+            <input type="text" name="" id="text-currency" placeholder="USD">
+            <button type="submit" id="submit-currency">Pesquisar</button>
+        </form>
+        <div id="result">
+
+        </div>
     </main>
 </body>
 </html>
